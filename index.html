@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<!--
+Template name: Nova
+Template author: FreeBootstrap.net
+Author website: https://freebootstrap.net/
+License: https://freebootstrap.net/license
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Capy Pink</title>
+
+    <!-- ======= Google Font =======-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Google Font-->
+
+    <!-- ======= Styles =======-->
+    <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendors/glightbox/glightbox.min.css" rel="stylesheet" />
+    <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendors/aos/aos.css" rel="stylesheet" />
+    <!-- End Styles-->
+
+    <!-- ======= Theme Style =======-->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- End Theme Style-->
+
+    <!-- ======= Apply theme =======-->
+    <script>
+      // Apply the theme as early as possible to avoid flicker
+      (function () {
+        const storedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-bs-theme", storedTheme);
+      })();
+    </script>
+    <style></style>
+  </head>
+  <body>
+    <!-- ======= Site Wrap =======-->
+    <div class="site-wrap">
+      <!-- ======= Header =======-->
+      <header
+        class="fbs__net-navbar navbar navbar-expand-lg dark"
+        aria-label="freebootstrap.net navbar"
+      >
+        <div
+          class="container d-flex align-items-center justify-content-between"
+        >
+          <!-- Start Logo-->
+          <a class="navbar-brand w-auto" href="index.html">
+            <!-- If you use a text logo, uncomment this if it is commented-->
+            <!-- Vertex-->
+
+            <!-- If you plan to use an image logo, uncomment this if it is commented-->
+
+            <!-- logo dark--><img
+              class="logo dark img-fluid"
+              src="assets/images/logo-dark.svg"
+              alt="FreeBootstrap.net image placeholder"
+            />
+
+            <!-- logo light--><img
+              class="logo light img-fluid"
+              src="assets/images/logo-light.svg"
+              alt="FreeBootstrap.net image placeholder"
+            />
+          </a>
+          <!-- End Logo-->
+
+          <!-- Start offcanvas-->
+          <div
+            class="offcanvas offcanvas-start w-75"
+            id="fbs__net-navbars"
+            tabindex="-1"
+            aria-labelledby="fbs__net-navbarsLabel"
+          >
+            <div class="offcanvas-header">
+              <div class="offcanvas-header-logo">
+                <!-- If you use a text logo, uncomment this if it is commented-->
+
+                <!-- h5#fbs__net-navbarsLabel.offcanvas-title Vertex-->
+
+                <!-- If you plan to use an image logo, uncomment this if it is commented-->
+                <a
+                  class="logo-link"
+                  id="fbs__net-navbarsLabel"
+                  href="index.html"
+                >
+                  <!-- logo dark--><img
+                    class="logo dark img-fluid"
+                    src="assets/images/logo-dark.svg"
+                    alt="FreeBootstrap.net image placeholder" />
+
+                  <!-- logo light--><img
+                    class="logo light img-fluid"
+                    src="assets/images/logo-light.svg"
+                    alt="FreeBootstrap.net image placeholder"
+                /></a>
+              </div>
+              <button
+                class="btn-close btn-close-black"
+                type="button"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+
+            <div class="offcanvas-body align-items-lg-center">
+              <ul class="navbar-nav nav me-auto ps-lg-5 mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link scroll-link active"
+                    aria-current="page"
+                    href="#home"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll-link" href="#services"
+                    >Cerita & Pengalaman</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link scroll-link" href="#faq">Tips</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- End offcanvas-->
+
+          <div class="ms-auto w-auto">
+            <div class="header-social d-flex align-items-center gap-1">
+              <button
+                class="fbs__net-navbar-toggler justify-content-center align-items-center ms-auto"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#fbs__net-navbars"
+                aria-controls="fbs__net-navbars"
+                aria-label="Toggle navigation"
+                aria-expanded="false"
+              >
+                <svg
+                  class="fbs__net-icon-menu"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewbox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="21" x2="3" y1="6" y2="6"></line>
+                  <line x1="15" x2="3" y1="12" y2="12"></line>
+                  <line x1="17" x2="3" y1="18" y2="18"></line>
+                </svg>
+                <svg
+                  class="fbs__net-icon-close"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewbox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M18 6 6 18"></path>
+                  <path d="m6 6 12 12"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- End Header-->
+
+      <!-- ======= Main =======-->
+      <main>
+        <!-- ======= Hero =======-->
+        <section
+          class="hero__v6 section d-flex align-items-center justify-content-center text-center"
+          id="home"
+        >
+          <div class="container text-align-center">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- <span
+                  class="hero-subtitle text-uppercase"
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                >
+                  Innovative Fintech Solutions
+                </span> -->
+                <h1
+                  class="hero-title mb-3"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  Halo, aku Capy!
+                </h1>
+                <p
+                  class="hero-description mb-4 mb-lg-5"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  Senang sekali bisa bertemu lagi denganmu di sini. Setelah kita
+                  belajar lewat Buku Budgeting, sekarang saatnya lanjutkan
+                  perjalanan finansialmu lewat website ini. Website ini dibuat
+                  untuk meningkatkan literasi finansial dan membantu perencanaan
+                  keuangan kalian!
+                </p>
+                <div
+                  class="cta d-flex gap-2 justify-content-center mb-4 mb-lg-5"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <a class="btn" href="#">Get Started Now</a>
+                  <a class="btn btn-white-outline" href="#">
+                    Learn More
+                    <svg
+                      class="lucide lucide-arrow-up-right"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path d="M7 7h10v10"></path>
+                      <path d="M7 17 17 7"></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- End Hero-->
+
+        <!-- ======= Services =======-->
+        <!-- Section -->
+        <section class="section services__v3" id="services">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-8 mx-auto text-center">
+                <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                  Cerita dan Pengetahuan Finansial
+                </h2>
+              </div>
+            </div>
+            <div class="row g-4">
+              <!-- Card 1 -->
+              <div
+                class="col-md-6 col-lg-4"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <div
+                  class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between"
+                >
+                  <div>
+                    <h3 class="fs-5 mb-3">Toko Mainan</h3>
+                    <p class="mb-4">
+                      Di sebuah perumahan, ada dua sahabat bernama Capy dan
+                      Caty. Setiap kali diberi uang jajan oleh orang tuanya,
+                      mereka punya kebiasaan berbeda.
+                    </p>
+                  </div>
+                  <a
+                    href="#"
+                    class="special-link d-inline-flex gap-2 align-items-center text-decoration-none"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalTokoMainan"
+                  >
+                    <span class="icons">
+                      <i class="icon-1 bi bi-arrow-right-short"></i>
+                      <i class="icon-2 bi bi-arrow-right-short"></i>
+                    </span>
+                    <span>Read more</span>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card 2 -->
+              <div
+                class="col-md-6 col-lg-4"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div
+                  class="service-card p-4 rounded-4 h-100 d-flex flex-column justify-content-between"
+                >
+                  <div>
+                    <h3 class="fs-5 mb-3">
+                      Uang Jajan Cepat Habis? Saatnya Belajar Menabung dan
+                      Investasi!
+                    </h3>
+                    <p class="mb-4">
+                      Pernah nggak sih uang jajan kamu tiba-tiba habis lebih
+                      cepat dari biasanya?
+                    </p>
+                  </div>
+                  <a
+                    href="#"
+                    class="special-link d-inline-flex gap-2 align-items-center text-decoration-none"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalUangJajan"
+                  >
+                    <span class="icons">
+                      <i class="icon-1 bi bi-arrow-right-short"></i>
+                      <i class="icon-2 bi bi-arrow-right-short"></i>
+                    </span>
+                    <span>Read more</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Modal 1 -->
+        <div
+          class="modal fade"
+          id="modalTokoMainan"
+          tabindex="-1"
+          aria-labelledby="modalTokoMainanLabel"
+          aria-hidden="true"
+          style="overflow: hidden"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-centered mt-5">
+            <div class="modal-content service-card p-2 rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title fs-4 fw-bold" id="modalTokoMainanLabel">
+                  Toko Mainan
+                </h5>
+              </div>
+              <div
+                class="modal-body"
+                style="
+                  max-height: 50vh; /* tinggi modal maksimal 80% viewport */
+                  overflow-y: auto; /* kalau konten lebih panjang, jadi scrollable */
+                "
+              >
+                <p>
+                  Di sebuah perumahan, ada dua sahabat bernama
+                  <strong>Capy</strong> dan <strong>Caty</strong>. <br /><br />
+                  Setiap kali diberi uang jajan oleh orang tuanya, mereka punya
+                  kebiasaan berbeda.
+                  <br /><br />
+                  <strong>Caty</strong> suka sekali membeli mainan baru atau
+                  jajanan apa pun yang menarik perhatiannya. Setiap ada barang
+                  lucu, ia langsung ingin membelinya, tanpa berpikir apakah
+                  barang itu benar-benar penting. Akibatnya, uangnya selalu
+                  cepat habis. <br /><br />
+                  Sedangkan <strong>Capy</strong> lebih bijak mengatur uangnya.
+                  Ia punya sebuah <strong>buku</strong> yang disebut
+                  <strong>buku budgeting</strong>. Di buku itu,
+                  <strong>Capy</strong> menulis berapa uang yang ia dapatkan,
+                  berapa yang ia keluarkan, dan berapa yang ia sisihkan untuk
+                  tabungan. Hari demi hari, jumlah tabungannya pun semakin
+                  bertambah. <br /><br />
+                  Suatu sore, <strong>Caty</strong> melihat sebuah mainan baru
+                  yang dipajang di toko dekat rumah. “Aku ingin sekali membeli
+                  mainan itu!” seru <strong>Caty</strong>, sambil membuka
+                  dompetnya yang ternyata kosong. <br /><br />
+                  <strong>Capy</strong> hanya tersenyum. Ia membuka
+                  <strong>buku budgeting</strong>-nya, lalu berkata,
+                  <br /><br />
+                  “Aku tidak akan membeli mainan itu, Caty. Itu hanya
+                  <strong>keinginan</strong>. Aku lebih memilih
+                  <strong>menabung</strong> untuk sesuatu yang lebih penting.
+                  Kalau ada <strong>kebutuhan</strong>, seperti buku pelajaran
+                  atau perlengkapan sekolah, uangku masih aman. Dan sisanya bisa
+                  aku pakai untuk membeli <strong>emas</strong>.” <br /><br />
+                  <strong>Capy</strong> pun pergi ke toko
+                  <strong>emas</strong> bersama orang tuanya. Dengan tabungan
+                  yang ia kumpulkan sedikit demi sedikit, ia membeli
+                  <strong>emas</strong> kecil sebagai bentuk
+                  <strong>investasi</strong>. <br /><br />
+                  <strong>Caty</strong> terkejut. “Kenapa <strong>emas</strong>?
+                  Bukankah mainan lebih seru?” tanyanya. <br /><br />
+                  <strong>Capy</strong> menjawab, “Mainan memang menyenangkan,
+                  tapi cepat rusak atau bosan. Sedangkan
+                  <strong>emas</strong> bisa bertahan lama, bahkan nilainya bisa
+                  naik di masa depan. Jadi, dengan <strong>menabung</strong>,
+                  membedakan <strong>kebutuhan</strong> dan
+                  <strong>keinginan</strong>, serta
+                  <strong>berinvestasi</strong>, aku bisa mendapatkan manfaat
+                  yang lebih besar.” <br /><br />
+                  Sejak hari itu, <strong>Caty</strong> belajar bahwa uang tidak
+                  harus selalu habis untuk <strong>keinginan</strong>.
+                  <strong>Menabung</strong> dan
+                  <strong>berinvestasi</strong> bisa membuat masa depan lebih
+                  terjamin.
+                </p>
+              </div>
+              <div class="modal-footer border-0">
+                <a
+                  href="#"
+                  class="special-link d-inline-flex gap-2 align-items-center text-decoration-none"
+                  data-bs-dismiss="modal"
+                >
+                  <span class="icons">
+                    <i class="icon-1 bi bi-arrow-right-short"></i>
+                    <i class="icon-2 bi bi-arrow-right-short"></i>
+                  </span>
+                  <span>Tutup</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal 2 -->
+        <div
+          class="modal fade"
+          id="modalUangJajan"
+          tabindex="-1"
+          aria-labelledby="modalUangJajanLabel"
+          aria-hidden="true"
+          style="overflow: hidden"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-centered mt-5">
+            <div class="modal-content service-card p-2 rounded-4">
+              <div class="modal-header border-0">
+                <h5 class="modal-title fs-4 fw-bold" id="modalUangJajanLabel">
+                  Uang Jajan Cepat Habis? Saatnya Belajar Menabung dan
+                  Investasi!
+                </h5>
+              </div>
+              <div
+                class="modal-body"
+                style="
+                  max-height: 50vh; /* tinggi modal maksimal 80% viewport */
+                  overflow-y: auto; /* kalau konten lebih panjang, jadi scrollable */
+                "
+              >
+                <p>
+                  Pernah nggak sih uang jajan kamu tiba-tiba habis lebih cepat
+                  dari biasanya?
+                  <br />
+                  <br />
+                  Contohnya, dulu dengan Rp10.000 kamu bisa beli roti dan minum
+                  di kantin. Tapi sekarang, uang yang sama cuma cukup buat beli
+                  roti saja. Nah, kondisi inilah yang disebut
+                  <strong>Inflasi</strong>.
+                  <br />
+                  <br />
+                  <strong>Inflasi</strong> adalah keadaan ketika harga
+                  barang-barang naik, sehingga nilai uang terasa lebih kecil.
+                  Artinya, uang yang kita pegang jadi “menyusut” kekuatannya
+                  karena harga-harga semakin mahal.
+                  <br />
+                  <br />
+                  Salah satu cara untuk mengatasinya adalah dengan
+                  <strong>menabung</strong>. Misalnya, setiap hari kamu sisihkan
+                  Rp2.000 dari uang jajan. Kalau dilakukan terus-menerus,
+                  lama-lama jumlahnya akan banyak.
+                  <br />
+                  <br />
+                  Selain <strong>menabung</strong>, ada cara lain yang lebih
+                  seru, yaitu <strong>investasi</strong>.
+                  <br />
+                  <br />
+                  <strong>investasi</strong> artinya menggunakan uang yang
+                  disimpan agar nilainya tetap kuat atau bahkan bertambah di
+                  masa depan. Contoh investasi yang mudah dipahami adalah
+                  <strong>emas</strong>. Harga <strong>emas</strong> biasanya
+                  cenderung naik seiring waktu. Jadi, kalau kamu punya tabungan
+                  Rp500.000 lalu digunakan untuk membeli <strong>emas</strong>,
+                  nilainya bisa lebih tinggi beberapa tahun ke depan.
+                  <br />
+                  <br />
+                  Dengan begitu, meskipun <strong>inflasi</strong> bisa membuat
+                  jajan kantin lebih mahal, kita tetap bisa mengatasinya dengan
+                  <strong>menabung</strong> dan <strong>berinvestasi</strong>.
+                  Jadi, jangan habiskan semua uang jajanmu untuk belanja, coba
+                  mulai sisihkan sebagian untuk <strong>menabung</strong> dan
+                  <strong>investasi</strong> kecil-kecilan.
+                </p>
+              </div>
+              <div class="modal-footer border-0">
+                <a
+                  href="#"
+                  class="special-link d-inline-flex gap-2 align-items-center text-decoration-none"
+                  data-bs-dismiss="modal"
+                >
+                  <span class="icons">
+                    <i class="icon-1 bi bi-arrow-right-short"></i>
+                    <i class="icon-2 bi bi-arrow-right-short"></i>
+                  </span>
+                  <span>Tutup</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Services-->
+
+        <section class="section faq__v2" id="faq">
+          <div class="container">
+            <div class="row mb-4">
+              <div class="col-md-6 col-lg-7 mx-auto text-center">
+                <span
+                  class="subtitle text-uppercase mb-3"
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                  >Tips</span
+                >
+                <h2
+                  class="h2 fw-bold mb-3"
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                >
+                  5 Langkah Menabung Ala Capy
+                </h2>
+                <!-- <p data-aos="fade-up" data-aos-delay="100">
+                  Utilize our tools to develop your concepts and bring your
+                  vision to life. Once complete, effortlessly share your
+                  creations.
+                </p> -->
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-md-8 mx-auto"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="faq-content">
+                  <div
+                    class="accordion custom-accordion"
+                    id="accordionPanelsStayOpenExample"
+                  >
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseOne"
+                          aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseOne"
+                        >
+                          Tentukan Tujuan
+                        </button>
+                      </h2>
+                      <div
+                        class="accordion-collapse collapse"
+                        id="panelsStayOpen-collapseOne"
+                      >
+                        <div class="accordion-body">
+                          Tulis terlebih dahulu di buku budgeting apa yang ingin
+                          kamu capai. Misalnya untuk membeli mainan, buku baru,
+                          atau menyiapkan tabungan jangka panjang.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseTwo"
+                        >
+                          Sisihkan Uang Sejak Awal
+                        </button>
+                      </h2>
+                      <div
+                        class="accordion-collapse collapse"
+                        id="panelsStayOpen-collapseTwo"
+                      >
+                        <div class="accordion-body">
+                          Setiap kali menerima uang jajan, langsung tentukan
+                          jumlah yang ingin ditabung. Catat jumlah tersebut di
+                          buku budgeting agar lebih teratur.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseThree"
+                        >
+                          Catat Pengeluaran
+                        </button>
+                      </h2>
+                      <div
+                        class="accordion-collapse collapse"
+                        id="panelsStayOpen-collapseThree"
+                      >
+                        <div class="accordion-body">
+                          Semua pengeluaran, baik kecil maupun besar, tuliskan
+                          di buku budgeting. Dengan begitu, kamu bisa melihat
+                          apakah uang lebih banyak digunakan untuk kebutuhan
+                          atau sekadar keinginan.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseFour"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseFour"
+                        >
+                          Pantau Perkembangan
+                        </button>
+                      </h2>
+                      <div
+                        class="accordion-collapse collapse"
+                        id="panelsStayOpen-collapseFour"
+                      >
+                        <div class="accordion-body">
+                          Lakukan pengecekan secara rutin, misalnya setiap akhir
+                          minggu. Dari catatan di buku budgeting, kamu akan
+                          melihat tabunganmu bertambah sedikit demi sedikit.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseFive"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseFive"
+                        >
+                          Gunakan Dengan Bijak
+                        </button>
+                      </h2>
+                      <div
+                        class="accordion-collapse collapse"
+                        id="panelsStayOpen-collapseFive"
+                      >
+                        <div class="accordion-body">
+                          Setelah mencapai target, gunakan tabungan sesuai
+                          tujuanmu. Jika memungkinkan, sisihkan sebagian lagi
+                          untuk investasi sederhana, seperti membeli emas, agar
+                          nilainya terus bertambah.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End FAQ-->
+        </section>
+        <!-- End FAQ-->
+
+        <!-- ======= About =======-->
+        <section class="about__v4 section" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6 order-md-2">
+                <div class="row justify-content-end">
+                  <div class="col-md-11 mb-4 mb-md-0">
+                    <span
+                      class="subtitle text-uppercase mb-3"
+                      data-aos="fade-up"
+                      data-aos-delay="0"
+                      >About us</span
+                    >
+                    <h2 class="mb-4" data-aos="fade-up" data-aos-delay="100">
+                      Experience the future of finance with our secure,
+                      efficient, and user-friendly financial services
+                    </h2>
+                    <div data-aos="fade-up" data-aos-delay="200">
+                      <p>
+                        Founded with the vision of revolutionizing the financial
+                        industry, we are a leading fintech company dedicated to
+                        providing innovative and secure financial solutions.
+                      </p>
+                      <p>
+                        Our cutting-edge platform ensures your transactions are
+                        safe, streamlined, and easy to manage, empowering you to
+                        take control of your financial journey with confidence
+                        and convenience.
+                      </p>
+                    </div>
+                    <h4
+                      class="small fw-bold mt-4 mb-3"
+                      data-aos="fade-up"
+                      data-aos-delay="300"
+                    >
+                      Key Values and Vision
+                    </h4>
+                    <ul
+                      class="d-flex flex-row flex-wrap list-unstyled gap-3 features"
+                      data-aos="fade-up"
+                      data-aos-delay="400"
+                    >
+                      <li class="d-flex align-items-center gap-2">
+                        <span class="icon rounded-circle text-center"
+                          ><i class="bi bi-check"></i></span
+                        ><span class="text">Innovation</span>
+                      </li>
+                      <li class="d-flex align-items-center gap-2">
+                        <span class="icon rounded-circle text-center"
+                          ><i class="bi bi-check"></i></span
+                        ><span class="text">Security</span>
+                      </li>
+                      <li class="d-flex align-items-center gap-2">
+                        <span class="icon rounded-circle text-center"
+                          ><i class="bi bi-check"></i></span
+                        ><span class="text">User-Centric Design </span>
+                      </li>
+                      <li class="d-flex align-items-center gap-2">
+                        <span class="icon rounded-circle text-center"
+                          ><i class="bi bi-check"></i></span
+                        ><span class="text">Transparency</span>
+                      </li>
+                      <li class="d-flex align-items-center gap-2">
+                        <span class="icon rounded-circle text-center"
+                          ><i class="bi bi-check"></i></span
+                        ><span class="text">Empowerment</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="img-wrap position-relative">
+                  <img
+                    class="img-fluid rounded-4"
+                    src="assets/images/about_2-min.jpg"
+                    alt="FreeBootstrap.net image placeholder"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                  />
+                  <div
+                    class="mission-statement p-4 rounded-4 d-flex gap-4"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <div class="mission-icon text-center rounded-circle">
+                      <i class="bi bi-lightbulb fs-4"></i>
+                    </div>
+                    <div>
+                      <h3 class="text-uppercase fw-bold">Mission Statement</h3>
+                      <p class="fs-5 mb-0">
+                        Our mission is to empower individuals and businesses by
+                        delivering secure, efficient, and user-friendly
+                        financial services.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End About-->
+
+        <!-- ======= Features =======-->
+        <section class="section features__v2" id="features">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="d-lg-flex p-5 rounded-4 content"
+                  data-aos="fade-in"
+                  data-aos-delay="0"
+                >
+                  <div class="row">
+                    <div
+                      class="col-lg-5 mb-5 mb-lg-0"
+                      data-aos="fade-up"
+                      data-aos-delay="0"
+                    >
+                      <div class="row">
+                        <div class="col-lg-11">
+                          <div
+                            class="h-100 flex-column justify-content-between d-flex"
+                          >
+                            <div>
+                              <h2 class="mb-4">Why Choose us</h2>
+                              <p class="mb-5">
+                                Experience the future of finance with our
+                                secure, efficient, and user-friendly financial
+                                services. Our cutting-edge platform ensures your
+                                transactions are safe, streamlined, and easy to
+                                manage, empowering you to take control of your
+                                financial journey with confidence and
+                                convenience."
+                              </p>
+                            </div>
+                            <div class="align-self-start">
+                              <a
+                                class="glightbox btn btn-play d-inline-flex align-items-center gap-2"
+                                href="https://www.youtube.com/watch?v=DQx96G4yHd8"
+                                data-gallery="video"
+                                ><i class="bi bi-play-fill"></i> Watch the
+                                Video</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-7">
+                      <div class="row justify-content-end">
+                        <div class="col-lg-11">
+                          <div class="row">
+                            <div
+                              class="col-sm-6"
+                              data-aos="fade-up"
+                              data-aos-delay="0"
+                            >
+                              <div class="icon text-center mb-4">
+                                <i class="bi bi-person-check fs-4"></i>
+                              </div>
+                              <h3 class="fs-6 fw-bold mb-3">
+                                User-Friendly Interface
+                              </h3>
+                              <p>
+                                Easy navigation with responsive design for
+                                various devices.
+                              </p>
+                            </div>
+                            <div
+                              class="col-sm-6"
+                              data-aos="fade-up"
+                              data-aos-delay="100"
+                            >
+                              <div class="icon text-center mb-4">
+                                <i class="bi bi-graph-up fs-4"></i>
+                              </div>
+                              <h3 class="fs-6 fw-bold mb-3">
+                                Financial Analytics
+                              </h3>
+                              <p>
+                                Budget tracking, expense categorization, and
+                                personalized insights.
+                              </p>
+                            </div>
+                            <div
+                              class="col-sm-6"
+                              data-aos="fade-up"
+                              data-aos-delay="200"
+                            >
+                              <div class="icon text-center mb-4">
+                                <i class="bi bi-headset fs-4"></i>
+                              </div>
+                              <h3 class="fs-6 fw-bold mb-3">
+                                Customer Support
+                              </h3>
+                              <p>
+                                24/7 service via chat, email, phone, and a
+                                detailed help center.
+                              </p>
+                            </div>
+                            <div
+                              class="col-sm-6"
+                              data-aos="fade-up"
+                              data-aos-delay="300"
+                            >
+                              <div class="icon text-center mb-4">
+                                <i class="bi bi-shield-lock fs-4"></i>
+                              </div>
+                              <h3 class="fs-6 fw-bold mb-3">
+                                Security Features
+                              </h3>
+                              <p>
+                                Data encryption, fraud detection, and prevention
+                                mechanisms.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Features-->
+
+        <!-- ======= Pricing =======-->
+        <section class="section pricing__v2" id="pricing">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-5 mx-auto text-center">
+                <span
+                  class="subtitle text-uppercase mb-3"
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                  >Pricing</span
+                >
+                <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                  Plan for every budget
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="200">
+                  Experience the future of finance with our secure, efficient,
+                  and user-friendly financial services
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div
+                class="col-md-4 mb-4 mb-md-0"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="p-5 rounded-4 price-table h-100">
+                  <h3>Personal</h3>
+                  <p>
+                    Choose a plan that fits your personal financial needs and
+                    start managing your finances more effectively.
+                  </p>
+                  <div class="price mb-4">
+                    <strong>$7</strong><span>/ month</span>
+                  </div>
+                  <div><a class="btn" href="#">Get Started</a></div>
+                </div>
+              </div>
+              <div class="col-md-8" data-aos="fade-up" data-aos-delay="400">
+                <div class="p-5 rounded-4 price-table popular h-100">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <h3 class="mb-3">Business</h3>
+                      <p>
+                        Optimize your business financial operations with our
+                        tailored business plans.
+                      </p>
+                      <div class="price mb-4">
+                        <strong class="me-1">$29</strong><span>/ month</span>
+                      </div>
+                      <div>
+                        <a class="btn btn-white hover-outline" href="#"
+                          >Get Started</a
+                        >
+                      </div>
+                    </div>
+                    <div class="col-md-6 pricing-features">
+                      <h4 class="text-uppercase fw-bold mb-3">Features</h4>
+                      <ul class="list-unstyled d-flex flex-column gap-3">
+                        <li class="d-flex gap-2 align-items-start mb-0">
+                          <span
+                            class="icon rounded-circle position-relative mt-1"
+                            ><i class="bi bi-check"></i></span
+                          ><span
+                            >Personalized financial insights and reports</span
+                          >
+                        </li>
+                        <li class="d-flex gap-2 align-items-start mb-0">
+                          <span
+                            class="icon rounded-circle position-relative mt-1"
+                            ><i class="bi bi-check"></i></span
+                          ><span>Priority customer support</span>
+                        </li>
+                        <li class="d-flex gap-2 align-items-start mb-0">
+                          <span
+                            class="icon rounded-circle position-relative mt-1"
+                            ><i class="bi bi-check"></i></span
+                          ><span
+                            >Access to exclusive investment opportunities</span
+                          >
+                        </li>
+                        <li class="d-flex gap-2 align-items-start mb-0">
+                          <span
+                            class="icon rounded-circle position-relative mt-1"
+                            ><i class="bi bi-check"></i></span
+                          ><span>AI-driven financial recommendations</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Pricing-->
+
+        <!-- ======= How it works =======-->
+        <section class="section howitworks__v1" id="how-it-works">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-6 text-center mx-auto">
+                <span
+                  class="subtitle text-uppercase mb-3"
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                  >How it works</span
+                >
+                <h2 data-aos="fade-up" data-aos-delay="100">How It Works</h2>
+                <p data-aos="fade-up" data-aos-delay="200">
+                  Our platform is designed to make managing your finances simple
+                  and efficient. Follow these easy steps to get started:
+                </p>
+              </div>
+            </div>
+            <div class="row g-md-5">
+              <div class="col-md-6 col-lg-3">
+                <div
+                  class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative"
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                >
+                  <div data-aos="fade-right" data-aos-delay="500">
+                    <img
+                      class="arch-line"
+                      src="assets/images/arch-line.svg"
+                      alt="FreeBootstrap.net image placeholder"
+                    />
+                  </div>
+                  <span
+                    class="step-number rounded-circle text-center fw-bold mb-5 mx-auto"
+                    >1</span
+                  >
+                  <div>
+                    <h3 class="fs-5 mb-4">Sign Up</h3>
+                    <p>
+                      Visit our website or download our app to sign up. Provide
+                      basic information to set up your secure account.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="600"
+              >
+                <div
+                  class="step-card reverse text-center h-100 d-flex flex-column justify-content-start position-relative"
+                >
+                  <div data-aos="fade-right" data-aos-delay="1100">
+                    <img
+                      class="arch-line reverse"
+                      src="assets/images/arch-line-reverse.svg"
+                      alt="FreeBootstrap.net image placeholder"
+                    />
+                  </div>
+                  <span
+                    class="step-number rounded-circle text-center fw-bold mb-5 mx-auto"
+                    >2</span
+                  >
+                  <h3 class="fs-5 mb-4">Set Up Your Profile</h3>
+                  <p>
+                    Add your personal or business details to tailor the platform
+                    to your specific needs.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="1200"
+              >
+                <div
+                  class="step-card text-center h-100 d-flex flex-column justify-content-start position-relative"
+                >
+                  <div data-aos="fade-right" data-aos-delay="1700">
+                    <img
+                      class="arch-line"
+                      src="assets/images/arch-line.svg"
+                      alt="FreeBootstrap.net image placeholder"
+                    />
+                  </div>
+                  <span
+                    class="step-number rounded-circle text-center fw-bold mb-5 mx-auto"
+                    >3</span
+                  >
+                  <h3 class="fs-5 mb-4">Explore Features</h3>
+                  <p>
+                    Access your dashboard for a summary of your finances:
+                    balances, recent transactions, and insights.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-lg-3"
+                data-aos="fade-up"
+                data-aos-delay="1800"
+              >
+                <div
+                  class="step-card last text-center h-100 d-flex flex-column justify-content-start position-relative"
+                >
+                  <span
+                    class="step-number rounded-circle text-center fw-bold mb-5 mx-auto"
+                    >4</span
+                  >
+                  <div>
+                    <h3 class="fs-5 mb-4">Invest and Grow</h3>
+                    <p>
+                      Discover a variety of investment opportunities tailored to
+                      your financial goals.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End How it works-->
+
+        <!-- ======= Stats =======-->
+        <section class="stats__v3 section">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div
+                  class="d-flex flex-wrap content rounded-4"
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                >
+                  <div class="rounded-borders">
+                    <div class="rounded-border-1"></div>
+                    <div class="rounded-border-2"></div>
+                    <div class="rounded-border-3"></div>
+                  </div>
+                  <div
+                    class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <div class="stat-item">
+                      <h3 class="fs-1 fw-bold">
+                        <span
+                          class="purecounter"
+                          data-purecounter-start="0"
+                          data-purecounter-end="10"
+                          data-purecounter-duration="2"
+                          >0</span
+                        ><span>K+</span>
+                      </h3>
+                      <p class="mb-0">Customer Satisfaction</p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="stat-item">
+                      <h3 class="fs-1 fw-bold">
+                        <span
+                          class="purecounter"
+                          data-purecounter-start="0"
+                          data-purecounter-end="200"
+                          data-purecounter-duration="2"
+                          >0</span
+                        ><span>%+</span>
+                      </h3>
+                      <p class="mb-0">Revenue Increase</p>
+                    </div>
+                  </div>
+                  <div
+                    class="col-12 col-sm-6 col-md-4 mb-4 mb-md-0 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <div class="stat-item">
+                      <h3 class="fs-1 fw-bold">
+                        <span
+                          class="purecounter"
+                          data-purecounter-start="0"
+                          data-purecounter-end="20"
+                          data-purecounter-duration="2"
+                          >0</span
+                        ><span>x</span>
+                      </h3>
+                      <p class="mb-0">Business Growth</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Stats-->
+
+        <!-- ======= Testimonials =======-->
+        <section class="section testimonials__v2" id="testimonials">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-lg-5 mx-auto text-center">
+                <span
+                  class="subtitle text-uppercase mb-3"
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                  >Testimonials</span
+                >
+                <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">
+                  What Our Users Are Saying
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="200">
+                  Real Stories of Success and Satisfaction from Our Diverse
+                  Community
+                </p>
+              </div>
+            </div>
+            <div class="row g-4" data-masonry='{"percentPosition": true }'>
+              <div
+                class="col-md-6 col-lg-4"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                <div class="testimonial rounded-4 p-4">
+                  <blockquote class="mb-3">
+                    &ldquo; This platform has completely transformed the way I
+                    manage my business finances. The real-time transaction
+                    tracking and seamless payment options have saved me so much
+                    time and effort! &rdquo;
+                  </blockquote>
+                  <div
+                    class="testimonial-author d-flex gap-3 align-items-center"
+                  >
+                    <div class="author-img">
+                      <img
+                        class="rounded-circle img-fluid"
+                        src="assets/images/person-sq-2-min.jpg"
+                        alt="FreeBootstrap.net image placeholder"
+                      />
+                    </div>
+                    <div class="lh-base">
+                      <strong class="d-block">John Davis</strong
+                      ><span>Small Business Owner</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-lg-4"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                <div class="testimonial rounded-4 p-4">
+                  <blockquote class="mb-3">
+                    &ldquo; As a freelancer, managing my finances can be
+                    overwhelming. The budgeting tools and personalized insights
+                    have made it so much easier to stay on top of my expenses
+                    and plan for the future. &rdquo;
+                  </blockquote>
+                  <div
+                    class="testimonial-author d-flex gap-3 align-items-center"
+                  >
+                    <div class="author-img">
+                      <img
+                        class="rounded-circle img-fluid"
+                        src="assets/images/person-sq-1-min.jpg"
+                        alt="FreeBootstrap.net image placeholder"
+                      />
+                    </div>
+                    <div class="lh-base">
+                      <strong class="d-block">Emily Smith</strong
+                      ><span>Freelancer</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-lg-4"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="testimonial rounded-4 p-4">
+                  <blockquote class="mb-3">
+                    &ldquo; The investment options and portfolio management
+                    tools on this platform are top-notch. The variety of choices
+                    caters to all types of investors, from conservative to
+                    aggressive. I especially appreciate how the tailored
+                    recommendations align perfectly with my financial goals.
+                    It’s a game-changer for anyone serious about growing their
+                    wealth. &rdquo;
+                  </blockquote>
+                  <div
+                    class="testimonial-author d-flex gap-3 align-items-center"
+                  >
+                    <div class="author-img">
+                      <img
+                        class="rounded-circle img-fluid"
+                        src="assets/images/person-sq-5-min.jpg"
+                        alt="FreeBootstrap.net image placeholder"
+                      />
+                    </div>
+                    <div class="lh-base">
+                      <strong class="d-block">Michael Rodriguez</strong
+                      ><span>Investor</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-lg-4"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="testimonial rounded-4 p-4">
+                  <blockquote class="mb-3">
+                    &ldquo; I never thought managing money could be this simple!
+                    The user-friendly interface and secure transaction process
+                    give me the confidence to handle my finances independently.
+                    &rdquo;
+                  </blockquote>
+                  <div
+                    class="testimonial-author d-flex gap-3 align-items-center"
+                  >
+                    <div class="author-img">
+                      <img
+                        class="rounded-circle img-fluid"
+                        src="assets/images/person-sq-3-min.jpg"
+                        alt="FreeBootstrap.net image placeholder"
+                      />
+                    </div>
+                    <div class="lh-base">
+                      <strong class="d-block">Sarah Lee</strong
+                      ><span>College Student</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-lg-4"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div class="testimonial rounded-4 p-4">
+                  <blockquote class="mb-3">
+                    &ldquo; The security features are outstanding. Knowing that
+                    my financial data is protected gives me peace of mind, and
+                    the platform's efficiency makes it a pleasure to use.
+                    &rdquo;
+                  </blockquote>
+                  <div
+                    class="testimonial-author d-flex gap-3 align-items-center"
+                  >
+                    <div class="author-img">
+                      <img
+                        class="rounded-circle img-fluid"
+                        src="assets/images/person-sq-7-min.jpg"
+                        alt="FreeBootstrap.net image placeholder"
+                      />
+                    </div>
+                    <div class="lh-base">
+                      <strong class="d-block">James Kim</strong
+                      ><span>IT Consultant</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-6 col-lg-4"
+                data-aos="fade-up"
+                data-aos-delay="500"
+              >
+                <div class="testimonial rounded-4 p-4">
+                  <blockquote class="mb-3">
+                    &ldquo; The platform’s intuitive design and robust features
+                    have been a game-changer for my startup. It’s helped me
+                    streamline operations and focus on growing my business.
+                    &rdquo;
+                  </blockquote>
+                  <div
+                    class="testimonial-author d-flex gap-3 align-items-center"
+                  >
+                    <div class="author-img">
+                      <img
+                        class="rounded-circle img-fluid"
+                        src="assets/images/person-sq-8-min.jpg"
+                        alt="FreeBootstrap.net image placeholder"
+                      />
+                    </div>
+                    <div class="lh-base">
+                      <strong class="d-block">Laura Brown</strong
+                      ><span>Entrepreneur</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Testimonials-->
+
+        <!-- ======= FAQ =======-->
+
+        <!-- ======= Contact =======-->
+        <section class="section contact__v2" id="contact">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-6 col-lg-7 mx-auto text-center">
+                <span
+                  class="subtitle text-uppercase mb-3"
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                  >Contact</span
+                >
+                <h2
+                  class="h2 fw-bold mb-3"
+                  data-aos="fade-up"
+                  data-aos-delay="0"
+                >
+                  Contact Us
+                </h2>
+                <p data-aos="fade-up" data-aos-delay="100">
+                  Utilize our tools to develop your concepts and bring your
+                  vision to life. Once complete, effortlessly share your
+                  creations.
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="d-flex gap-5 flex-column">
+                  <div
+                    class="d-flex align-items-start gap-3"
+                    data-aos="fade-up"
+                    data-aos-delay="0"
+                  >
+                    <div class="icon d-block">
+                      <i class="bi bi-telephone"></i>
+                    </div>
+                    <span>
+                      <span class="d-block">Phone</span
+                      ><strong>+(01 234 567 890)</strong></span
+                    >
+                  </div>
+                  <div
+                    class="d-flex align-items-start gap-3"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    <div class="icon d-block"><i class="bi bi-send"></i></div>
+                    <span>
+                      <span class="d-block">Email</span
+                      ><strong>info@mydomain.com</strong></span
+                    >
+                  </div>
+                  <div
+                    class="d-flex align-items-start gap-3"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                  >
+                    <div class="icon d-block">
+                      <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <span>
+                      <span class="d-block">Address</span>
+                      <address class="fw-bold">
+                        123 Main Street Apt 4B Springfield, <br />
+                        IL 62701 United States
+                      </address></span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div
+                  class="form-wrapper"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <form id="contactForm">
+                    <div class="row gap-3 mb-3">
+                      <div class="col-md-12">
+                        <label class="mb-2" for="name">Name</label>
+                        <input
+                          class="form-control"
+                          id="name"
+                          type="text"
+                          name="name"
+                          required=""
+                        />
+                      </div>
+                      <div class="col-md-12">
+                        <label class="mb-2" for="email">Email</label>
+                        <input
+                          class="form-control"
+                          id="email"
+                          type="email"
+                          name="email"
+                          required=""
+                        />
+                      </div>
+                    </div>
+                    <div class="row gap-3 mb-3">
+                      <div class="col-md-12">
+                        <label class="mb-2" for="subject">Subject</label>
+                        <input
+                          class="form-control"
+                          id="subject"
+                          type="text"
+                          name="subject"
+                        />
+                      </div>
+                    </div>
+                    <div class="row gap-3 gap-md-0 mb-3">
+                      <div class="col-md-12">
+                        <label class="mb-2" for="message">Message</label>
+                        <textarea
+                          class="form-control"
+                          id="message"
+                          name="message"
+                          rows="5"
+                          required=""
+                        ></textarea>
+                      </div>
+                    </div>
+                    <button class="btn btn-primary fw-semibold" type="submit">
+                      Send Message
+                    </button>
+                  </form>
+                  <div
+                    class="mt-3 d-none alert alert-success"
+                    id="successMessage"
+                  >
+                    Message sent successfully!
+                  </div>
+                  <div class="mt-3 d-none alert alert-danger" id="errorMessage">
+                    Message sending failed. Please try again later.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Contact-->
+
+        <!-- ======= Footer =======-->
+        <footer class="footer pt-5 pb-5">
+          <div class="container">
+            <div class="row mb-5 pb-4">
+              <div class="col-md-7">
+                <h2 class="fs-5">Join our newsletter</h2>
+                <p>
+                  Stay updated with our latest templates and offers—join our
+                  newsletter today!
+                </p>
+              </div>
+              <div class="col-md-5">
+                <form class="d-flex gap-2">
+                  <input
+                    class="form-control"
+                    type="email"
+                    placeholder="Email your email"
+                    required=""
+                  />
+                  <button class="btn btn-primary fs-6" type="submit">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="row justify-content-between mb-5 g-xl-5">
+              <div class="col-md-4 mb-5 mb-lg-0">
+                <h3 class="mb-3">About</h3>
+                <p class="mb-4">
+                  Utilize our tools to develop your concepts and bring your
+                  vision to life. Once complete, effortlessly share your
+                  creations.
+                </p>
+              </div>
+              <div class="col-md-7">
+                <div class="row g-2">
+                  <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="mb-3">Company</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="page-about.html">Leadership</a></li>
+                      <li>
+                        <a href="page-careers.html"
+                          >Careers
+                          <span class="badge ms-1">we're hiring</span></a
+                        >
+                      </li>
+                      <li><a href="page-case-studies.html">Case Studies</a></li>
+                      <li>
+                        <a href="page-terms-conditions.html"
+                          >Terms &amp; Conditions</a
+                        >
+                      </li>
+                      <li>
+                        <a href="page-privacy-policy.html">Privacy Policy</a>
+                      </li>
+                      <li><a href="page-404.html">404 page</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+                    <h3 class="mb-3">Accounts</h3>
+                    <ul class="list-unstyled">
+                      <li><a href="page-signup.html">Register</a></li>
+                      <li><a href="page-signin.html">Sign in</a></li>
+                      <li>
+                        <a href="page-forgot-password.html">Fogot Password</a>
+                      </li>
+                      <li><a href="page-coming-soon.html">Coming soon</a></li>
+                      <li>
+                        <a href="page-portfolio-masonry.html"
+                          >Portfolio Masonry</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 quick-contact">
+                    <h3 class="mb-3">Contact</h3>
+                    <p class="d-flex mb-3">
+                      <i class="bi bi-geo-alt-fill me-3"></i
+                      ><span
+                        >123 Main Street Apt 4B Springfield, <br />
+                        IL 62701 United States</span
+                      >
+                    </p>
+                    <a class="d-flex mb-3" href="mailto:info@mydomain.com"
+                      ><i class="bi bi-envelope-fill me-3"></i
+                      ><span>info@mydomain.com</span></a
+                    ><a class="d-flex mb-3" href="tel://+123456789900"
+                      ><i class="bi bi-telephone-fill me-3"></i
+                      ><span>+1 (234) 5678 9900</span></a
+                    ><a class="d-flex mb-3" href="https://freebootstrap.net"
+                      ><i class="bi bi-globe me-3"></i
+                      ><span>FreeBootstrap.net</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row credits pt-3">
+              <div class="col-xl-8 text-center text-xl-start mb-3 mb-xl-0">
+                <!--
+                Note:
+                =>>> Please keep all the footer links intact. <<<=
+                =>>> You can only remove the links if you buy the pro version. <<<=
+                =>>> Buy the pro version, which includes a functional PHP/AJAX contact form and many additional features.: https://freebootstrap.net/template/vertex-pro-bootstrap-website-template-for-portfolio/ <<<=
+                -->
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                Nova. All rights reserved. Designed with
+                <i class="bi bi-heart-fill text-danger"></i> by
+                <a href="https://freebootstrap.net">FreeBootstrap.net</a>
+              </div>
+              <div
+                class="col-xl-4 justify-content-start justify-content-xl-end quick-links d-flex flex-column flex-xl-row text-center text-xl-start gap-1"
+              >
+                Distributed by<a href="https://themewagon.com" target="_blank"
+                  >ThemeWagon</a
+                >
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- End Footer-->
+      </main>
+    </div>
+
+    <!-- ======= Back to Top =======-->
+    <button id="back-to-top"><i class="bi bi-arrow-up-short"></i></button>
+    <!-- End Back to top-->
+
+    <!-- ======= Javascripts =======-->
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/gsap/gsap.min.js"></script>
+    <script src="assets/vendors/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/vendors/isotope/isotope.pkgd.min.js"></script>
+    <script src="assets/vendors/glightbox/glightbox.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendors/aos/aos.js"></script>
+    <script src="assets/vendors/purecounter/purecounter.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/send_email.js"></script>
+    <!-- End JavaScripts-->
+  </body>
+</html>
